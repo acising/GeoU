@@ -3,7 +3,7 @@ import App from './App.vue'
 import router from './router';
 
 import ElementUI from 'element-ui'
-import '../theme/kellect-theme/index.css'
+import '../theme/index.css'
 
 Vue.config.productionTip = false
 

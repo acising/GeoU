@@ -4,14 +4,14 @@
       style="box-shadow: 0px 15px 10px -15px #72767b; height: 65px; position: fixed; width: 100%; z-index: 9999; background-color: #ffffff; padding:0 15%">
       <el-row>
         <el-col :span="6">
-          <img src="../assets/img/logo.svg" style="width: 210px; margin-top: 0px; margin-left: 20px" />
+          <img src="../assets/img/0Logo.png" style="height: 45px; margin-left: 30px; margin-top: 10px;" />
         </el-col>
         <el-col :span="18">
           <el-menu mode="horizontal" :default-active="active" :active-text-color="primaryColor" text-color="#000000"
-            style="width: 100%;text-align: right;background-color: #ffffff" @select="scrollTo">
+            style="width: 100%; text-align: right; background-color: #ffffff" @select="scrollTo">
             <el-menu-item index="0">项目介绍</el-menu-item>
-            <el-menu-item index="1">项目亮点</el-menu-item>
-            <el-menu-item index="2">关于我们</el-menu-item>
+            <el-menu-item index="2">项目亮点</el-menu-item>
+            <el-menu-item index="3">关于我们</el-menu-item>
           </el-menu>
         </el-col>
       </el-row>
@@ -19,66 +19,146 @@
 
     <el-main style="margin-top: 3%">
       <el-row style="text-align: center">
-        <h1 style="font-size: 100px; margin: 0;"><span :style="{ 'color': primaryColor }">Geo</span>U</h1>
+        <h1 style="font-size: 100px; margin: 0;">
+          <span :style="{ 'color': primaryColor }">Geo</span>U
+        </h1>
         <h2 style="font-size: 40px; margin: 0;">
-          久宇时空智能舱：一个时空大数据智能服务平台
+          久宇时空智能舱：时空大数据智能服务平台
         </h2>
       </el-row>
 
-      <!-- <el-row>
-        <el-col :offset="4" :span="16">
-          <p><span class="justify">
-              时空数据存在数据模态多、数据质量低、数据不对齐、数据安全弱等问题，导致时空数据治理和服务中存在数据难以统一表征、数据难以高效检索、数据难以融合利用、模型难以场景迁移、数据隐私难以保障等技术挑战。
-          </span></p>
-
-          <p><span class="justify">
-              针对以上挑战，我们构建了一个时空大数据智能服务平台（名为久宇（GeoU）时空智能舱），旨在向下为多源异构的时空数据提供统一的接入、存储、计算、治理、建模和安全能力，向上为时空数据消费者（如智慧城市治理、实景三维导航、自然资源测绘）提供高质量、一体化的数据服务。
-          </span></p>
-
-        </el-col>
-      </el-row> -->
-
-
-
       <el-row style="text-align: center; align: center; margin-top: 3%">
-        <img src="../assets/img/func.png" style="width:65%; margin-bottom: 1%">
+        <img src="../assets/img/1SpatiotemporalInformationEnablesHighQualitySocialDevelopment.jpg"
+          style="width:65%; margin-bottom: 1%">
       </el-row>
 
       <el-row>
         <el-col :offset="4" :span="16">
           <p class="justify">
+            <strong>久宇时空智能舱</strong>是浙江工业大学地理信息学院发展时空信息与人工智能交叉学科的创新载体项目，
+            可为<strong>实景三维</strong>、<strong>低空飞行</strong>、<strong>自动驾驶</strong>、
+            <strong>空天地通感算一体化</strong>等新兴产业以及保障社会治理、自然资源、生态环境、绿色能源等可持续发展提供底层技术支撑，
+            并通过科产教融汇打造成时空智能领域的科教人一体化交叉学科创新示范项目。
+          </p>
+          <p class="justify">
             <strong>时空数据面临的挑战：</strong>
-            时空数据存在<strong>数据模态多、数据质量低、数据不对齐、数据安全弱</strong>等问题。这导致数据治理和服务中出现一系列技术难题，例如：
-            数据难以统一表征、
-            数据检索效率低下、
-            数据融合与利用困难、
-            模型难以场景迁移、
-            数据隐私保障不足。
+            时空数据存在 <strong>数据模态多、数据质量低、数据不对齐、数据安全弱</strong> 等问题。这导致数据治理和服务中出现一系列技术难题，例如：
+            数据难以统一表征、数据检索效率低下、数据融合与利用困难、模型难以场景迁移、数据隐私保障不足。
           </p>
         </el-col>
       </el-row>
 
-
       <el-row style="text-align: center; align: center; margin-top: 3%">
-        <img src="../assets/img/arch.png" style="width:65%; margin-bottom: 1%">
+        <img src="../assets/img/2Architecture.jpg" style="width:65%; margin-bottom: 1%">
       </el-row>
-
 
       <el-row>
         <el-col :offset="4" :span="16">
           <p class="justify">
             <strong>解决方案：</strong>
-            构建了一个时空大数据智能服务平台——
-            <strong>久宇（GeoU）时空智能舱</strong>。该平台旨在：
+            构建了一个时空大数据智能服务平台 —— 
+            <span class="important">GeoU 久宇·时空智能舱</span>。该平台旨在：
           </p>
           <ul class="bullet-list">
-            <li><strong>向下：</strong>为多源异构的时空数据提供统一的接入、存储、计算、治理、建模和安全能力</li>
-            <li><strong>向上：</strong>为时空数据消费者（如智慧城市治理、实景三维导航、自然资源测绘）提供高质量、一体化的数据服务</li>
+            <li>
+              <strong>向下：</strong> 为多源异构的时空数据提供统一的接入、存储、计算、治理、建模和安全能力
+            </li>
+            <li>
+              <strong>向上：</strong> 为时空数据消费者（如智慧城市治理、实景三维导航、自然资源测绘）提供高质量、一体化的数据服务
+            </li>
           </ul>
         </el-col>
       </el-row>
 
+      <el-row style="text-align: center; align: center; margin-top: 3%">
+        <img src="../assets/img/3DataStructure.jpg" style="width:65%; margin-bottom: 1%">
+      </el-row>
+
       <el-divider></el-divider>
+
+      <el-row>
+        <el-col :offset="4" :span="16">
+          <h3 style="text-align: center; align: center; margin-top: 30px; margin-bottom: 15px; color: #EB6A3F">
+            久宇·时空智能舱GeoU：开启时空大数据智能服务新篇章
+          </h3>
+          <p class="justify">
+            时空数据是连接数字世界与物理世界的关键要素。在万物互联的大数据大模型时代，时空信息的提取与知识挖掘需要走向智能化，
+            <span class="important">时空智能学</span> 将成为人工智能的重要组成部分。近日，国家最高科技奖获得者
+            <span class="important">李德仁院士</span>
+            公开提出「时空智能学」概念，称其是利用通导遥智能传感器、云计算和人工智能方法对自然活动和人类活动进行感知、认知，支持智能决策的一门科学和技术，
+            是测绘遥感和地理信息学发展的新阶段，是助力时空信息高质量发展、赋能新质生产力的重要途径。
+          </p>
+        </el-col>
+      </el-row>
+
+      <el-row style="text-align: center; align: center; margin-top: 3%">
+        <img src="../assets/img/4CalculateStructure.jpg" style="width:65%; margin-bottom: 1%">
+      </el-row>
+
+      <el-row>
+        <el-col :offset="4" :span="16">
+          <p class="justify">
+            时空信息产业是数字经济重要组成部分，
+            <span class="important">2035 远景目标纲要</span> 多处重点提及时空信息技术，国家
+            <strong>「十四五」</strong>规划 <strong>102 项重大工程</strong> 中近 80 项与地理时空信息产业相关，涉及交通强国、国家水网、生态系统等领域。2024 年 4 月，
+            <span class="important">中国时空信息集团有限公司</span> 在雄安新区的成立，标志着时空信息开辟万亿级国家战略新兴产业「新赛道」。
+          </p>
+          <p class="justify">
+            在此背景下，浙江工业大学地理信息学院
+            <span class="important">陈铁明</span> 教授领衔的时空智能计算与治理科研团队在 2024 年世界互联网大会「互联网之光」博览会上发布了最新研制的科技创新成果
+            —— <strong>GeoU 久宇·时空智能舱</strong>，这是一个全新的时空大数据智能服务平台框架。
+          </p>
+        </el-col>
+      </el-row>
+
+      <el-row style="text-align: center; align: center; margin-top: 3%">
+        <img src="../assets/img/5AIStructure.jpg" style="width:65%; margin-bottom: 1%">
+      </el-row>
+
+      <el-row>
+        <el-col :offset="4" :span="16">
+          <p class="justify">
+            《墨子·经上》称「久，弥异时也；宇，弥异所也。」哲学上的「久」特指时间，「宇」特指空间，因此「久宇」也是古时对「时空」概念的一种科学说法。
+            秉承时空智能学的理念，「久宇」对应的英文谐音 GeoU，恰可代表本项目的建设宗旨：地理时空信息（Geo）可为用户（U）提供无处不在的智能服务。
+          </p>
+        </el-col>
+      </el-row>
+
+      <el-row style="text-align: center; align: center; margin-top: 3%">
+        <img src="../assets/img/6SecStructure.jpg" style="width:65%; margin-bottom: 1%">
+      </el-row>
+
+      <el-row>
+        <el-col :offset="4" :span="16">
+          <p class="justify">
+            久宇时空智能舱（以下简称「久宇」）的研发目标是「让时空数据可见、让时空信息可用、让时空智能可信」。针对时空数据多模态、质量差、计算难、安全弱等技术挑战，
+            以时空数据赋能高质量发展为目标，通过突破时空数据统一接入表征、时空数据库基础软件、多模态跨场景时空数据智能计算、时空数据全生命周期安全保障等关键技术，
+            向下为多源异构时空数据提供统一的接入、存储、计算、治理、建模和安全能力，向上为时空数据消费者提供高质量、一体化的数据服务。
+          </p>
+        </el-col>
+      </el-row>
+
+      <el-row style="text-align: center; align: center; margin-top: 3%">
+        <img src="../assets/img/7DevStructure.jpg" style="width:40%; margin-bottom: 1%">
+      </el-row>
+
+      <el-row>
+        <el-col :offset="4" :span="16">
+          <p class="justify">
+            「久宇」的核心技术架构包括 <strong>数据底座、计算底座、智能底座和安全底座</strong> 四大模块。通过这些底层能力的系统化设计，
+            「久宇」为用户提供三种应用方式 —— <strong>开箱即用、数据托管和智能定义</strong>，灵活满足不同用户的需求。
+            「久宇」是对时空数据智能治理与服务的技术全新升级，通过系统化的底座设计，将复杂多源的时空数据转化为高效、精准、智能的决策资源，
+            为时空信息产业高质量发展提供全新的创新应用动能。
+          </p>
+        </el-col>
+      </el-row>
+
+      <el-row style="text-align: center; align: center; margin-top: 3%">
+        <img src="../assets/img/8Community.jpg" style="width:65%; margin-bottom: 1%">
+      </el-row>
+
+      <el-divider></el-divider>
+
       <el-row style="margin-top: 3%; text-align: center">
         <h4 style="font-size: 40px; margin: 0;">项目亮点</h4>
       </el-row>
@@ -86,7 +166,7 @@
       <el-row style="margin-top: 2%; margin-bottom: 2%; padding: 0 5%;">
         <el-col :offset="7" :span="4">
           <el-card :style="{ 'width': cardDiameter, 'height': cardDiameter }"
-            style="border-radius: 230px;text-align: center; box-shadow: 0px 1px 10px 0px #7E7E82">
+            style="border-radius: 230px; text-align: center; box-shadow: 0px 1px 10px 0px #7E7E82">
             <div style="margin-top: 30px;">
               <svg t="1681461908167" class="icon" viewBox="0 0 1024 1024" version="1.1"
                 xmlns="http://www.w3.org/2000/svg" p-id="11256" width="50" height="50">
@@ -106,12 +186,12 @@
         </el-col>
         <el-col :offset="3" :span="4">
           <el-card :style="{ 'width': cardDiameter, 'height': cardDiameter }"
-            style="border-radius: 230px;text-align: center; box-shadow: 0px 1px 10px 0px #7E7E82">
+            style="border-radius: 230px; text-align: center; box-shadow: 0px 1px 10px 0px #7E7E82">
             <div style="margin-top: 30px;">
               <svg t="1681461766337" class="icon" viewBox="0 0 1024 1024" version="1.1"
                 xmlns="http://www.w3.org/2000/svg" p-id="9617" id="mx_n_1681461766340" width="50" height="50">
                 <path
-                  d="M950.044444 671.288889V349.866667c34.133333-11.377778 56.888889-42.666667 56.888889-79.644445 0-48.355556-36.977778-85.333333-85.333333-85.333333-31.288889 0-59.733333 17.066667-73.955556 42.666667l-238.933333-128c0-45.511111-39.822222-85.333333-85.333333-85.333334s-85.333333 36.977778-85.333334 85.333334L199.111111 224.711111C182.044444 199.111111 156.444444 182.044444 125.155556 182.044444c-48.355556 0-85.333333 36.977778-85.333334 85.333334 0 36.977778 22.755556 68.266667 56.888889 79.644444v324.266667c-34.133333 11.377778-56.888889 42.666667-56.888889 79.644444 0 48.355556 36.977778 85.333333 85.333334 85.333334 31.288889 0 59.733333-17.066667 73.955555-42.666667l238.933333 128c0 45.511111 39.822222 85.333333 85.333334 85.333333s85.333333-36.977778 85.333333-85.333333l238.933333-128c14.222222 25.6 42.666667 42.666667 73.955556 42.666667 48.355556 0 85.333333-36.977778 85.333333-85.333334 0-36.977778-25.6-68.266667-56.888889-79.644444z m-59.733333 2.844444l-256-147.911111c2.844444-8.533333 5.688889-19.911111 5.688889-28.444444s-2.844444-19.911111-5.688889-28.444445l233.244445-133.688889 25.6 17.066667v324.266667c-2.844444-5.688889-2.844444-5.688889-2.844445-2.844445z m-287.288889-256c-14.222222-14.222222-31.288889-25.6-54.044444-31.288889V179.2c14.222222-5.688889 28.444444-14.222222 36.977778-25.6l247.466666 133.688889-230.4 130.844444z m-108.088889-238.933333v207.644444c-19.911111 5.688889-39.822222 17.066667-54.044444 31.288889L207.644444 284.444444 455.111111 150.755556c11.377778 11.377778 22.755556 22.755556 39.822222 28.444444zM179.2 332.8l233.244444 133.688889c-2.844444 8.533333-5.688889 19.911111-5.688888 28.444444s2.844444 19.911111 5.688888 28.444445l-256 147.911111h-2.844444V349.866667l25.6-17.066667zM199.111111 713.955556l241.777778-136.533334c14.222222 14.222222 31.288889 25.6 54.044444 31.288889v236.088889c-14.222222 5.688889-28.444444 14.222222-36.977777 25.6l-247.466667-133.688889c-2.844444-8.533333-5.688889-17.066667-11.377778-22.755555z m352.711111 128v-236.088889c19.911111-5.688889 39.822222-17.066667 54.044445-31.288889l241.777777 136.533333c-2.844444 8.533333-5.688889 14.222222-8.533333 22.755556l-247.466667 133.688889c-11.377778-11.377778-25.6-19.911111-39.822222-25.6z"
+                  d="M950.044444 671.288889V349.866667c34.133333-11.377778 56.888889-42.666667 56.888889-79.644445 0-48.355556-36.977778-85.333333-85.333333-85.333333-31.288889 0-59.733333 17.066667-73.955556 42.666667l-238.933333-128c0-45.511111-39.822222-85.333333-85.333333-85.333334s-85.333333 36.977778-85.333334 85.333334L199.111111 224.711111C182.044444 199.111111 156.444444 182.044444 125.155556 182.044444c-48.355556 0-85.333333 36.977778-85.333334 85.333334 0 36.977778 22.755556 68.266667 56.888889 79.644444v324.266667c-34.133333 11.377778-56.888889 42.666667-56.888889 79.644444 0 48.355556 36.977778 85.333333 85.333334 85.333333 31.288889 0 59.733333-17.066667 73.955555-42.666667l238.933333 128c0 45.511111 39.822222 85.333333 85.333334 85.333333s85.333333-36.977778 85.333333-85.333333l238.933333-128c14.222222 25.6 42.666667 42.666667 73.955556 42.666667 48.355556 0 85.333333-36.977778 85.333333-85.333334 0-36.977778-25.6-68.266667-56.888889-79.644444z m-59.733333 2.844444l-256-147.911111c2.844444-8.533333 5.688889-19.911111 5.688889-28.444444s-2.844444-19.911111-5.688889-28.444445l233.244445-133.688889 25.6 17.066667v324.266667c-2.844444-5.688889-2.844444-5.688889-2.844445-2.844445z m-287.288889-256c-14.222222-14.222222-31.288889-25.6-54.044444-31.288889V179.2c14.222222-5.688889 28.444444-14.222222 36.977778-25.6l247.466666 133.688889-230.4 130.844444z m-108.088889-238.933333v207.644444c-19.911111 5.688889-39.822222 17.066667-54.044444 31.288889L207.644444 284.444444 455.111111 150.755556c11.377778 11.377778 22.755556 22.755556 39.822222 28.444444zM179.2 332.8l233.244444 133.688889c-2.844444 8.533333-5.688889 19.911111-5.688888 28.444444s2.844444 19.911111 5.688888 28.444445l-256 147.911111h-2.844444V349.866667l25.6-17.066667zM199.111111 713.955556l241.777778-136.533334c14.222222 14.222222 31.288889 25.6 54.044444 31.288889v236.088889c-14.222222 5.688889-28.444444 14.222222-36.977777 25.6l-247.466667-133.688889c-2.844444-8.533333-5.688889-17.066667-11.377778-22.755555z m352.711111 128v-236.088889c19.911111-5.688889 39.822222-17.066667 54.044445-31.288889l241.777777 136.533333c-2.844444 8.533333-5.688889 14.222222-8.533333 22.755556l-247.466667 133.688889c-11.377778-11.377778-25.6-19.911111-39.822222-25.6z"
                   p-id="9618" fill="#dc714b"></path>
               </svg>
             </div>
@@ -119,10 +199,11 @@
           </el-card>
         </el-col>
       </el-row>
+
       <el-row style="margin-top: 2%; margin-bottom: 5%; padding: 0 5%;">
         <el-col :offset="3" :span="4">
           <el-card :style="{ 'width': cardDiameter, 'height': cardDiameter }"
-            style="border-radius: 230px;text-align: center; box-shadow: 0px 1px 10px 0px #7E7E82">
+            style="border-radius: 230px; text-align: center; box-shadow: 0px 1px 10px 0px #7E7E82">
             <div style="margin-top: 30px">
               <svg t="1673184233076" class="icon" viewBox="0 0 1024 1024" version="1.1"
                 xmlns="http://www.w3.org/2000/svg" p-id="2123" :width="iconDiameter" :height="iconDiameter">
@@ -139,7 +220,7 @@
         </el-col>
         <el-col :offset="1" :span="4">
           <el-card :style="{ 'width': cardDiameter, 'height': cardDiameter }"
-            style="border-radius: 230px;text-align: center; box-shadow: 0px 1px 10px 0px #7E7E82">
+            style="border-radius: 230px; text-align: center; box-shadow: 0px 1px 10px 0px #7E7E82">
             <div style="margin-top: 30px">
               <svg t="1673194902239" class="icon" viewBox="0 0 1024 1024" version="1.1"
                 xmlns="http://www.w3.org/2000/svg" p-id="4644" :width="iconDiameter" :height="iconDiameter">
@@ -153,7 +234,7 @@
         </el-col>
         <el-col :offset="1" :span="4">
           <el-card :style="{ 'width': cardDiameter, 'height': cardDiameter }"
-            style="border-radius: 230px;text-align: center; box-shadow: 0px 1px 10px 0px #7E7E82">
+            style="border-radius: 230px; text-align: center; box-shadow: 0px 1px 10px 0px #7E7E82">
             <div style="margin-top: 30px">
               <svg t="1673184573544" class="icon" viewBox="0 0 1024 1024" version="1.1"
                 xmlns="http://www.w3.org/2000/svg" p-id="5875" :width="iconDiameter" :height="iconDiameter">
@@ -179,7 +260,7 @@
         </el-col>
         <el-col :offset="1" :span="4">
           <el-card :style="{ 'width': cardDiameter, 'height': cardDiameter }"
-            style="border-radius: 230px;text-align: center; box-shadow: 0px 1px 10px 0px #7E7E82">
+            style="border-radius: 230px; text-align: center; box-shadow: 0px 1px 10px 0px #7E7E82">
             <div style="margin-top: 30px;">
               <svg t="1673184662915" class="icon" viewBox="0 0 1024 1024" version="1.1"
                 xmlns="http://www.w3.org/2000/svg" p-id="6998" :width="iconDiameter" :height="iconDiameter">
@@ -191,33 +272,38 @@
             <div style="margin-top: 20px; font-size: 25px">多场景</div>
           </el-card>
         </el-col>
-
       </el-row>
 
       <el-divider></el-divider>
+
       <el-row style="margin-top: 3%; text-align: center; margin-bottom: 3%">
         <h4 style="font-size: 40px; margin: 0;">关于我们</h4>
       </el-row>
-
       <el-row type="flex">
         <el-col :offset="4" :span="7">
           <div style="position: relative; top: 45%; transform: translateY(-50%)">
             <el-row>
-              <img src="../assets/img/about.svg" style="width: 100%">
+              <img src="../assets/img/9About.svg" style="width: 100%">
             </el-row>
           </div>
-
         </el-col>
         <el-col :offset="1" :span="8">
-          <span
-            class="justify"><b>浙江工业大学地理信息学院</b>是浙江工业大学、莫干山地信实验室和德清县人民政府合作共建的学院。地理信息学院聚焦智能化时空大数据，面向时空信息与自动驾驶、空天遥感与智慧城市、无人机与低空经济等战略新兴产业，依托计算机、软件工程、控制、通信等信息大类学科，交叉融合遥感科学与技术、测绘科学、地理科学、环境科学和地质科学等学科，发展时空计算、智慧遥感、智能感知、时空大数据等四个交叉学科方向，联合开展时空信息科学的理论创新、前沿技术攻关和科技成果转化，努力成为国家时空信息战略科技力量的重要基地，打造国际领先的时空智能领域教育、科技、人才一体化发展新模式，力争成为我国时空计算、智慧城市、低空经济和数字中国建设的人才培养基地和地理信息产业研发基地。
+          <span class="justify">
+            <span class="important">浙江工业大学地理信息学院</span>成立于2024年6月，在自然资源部与浙江省人民政府指导下，
+            由 <strong>莫干山地信实验室</strong> 与 <strong>德清县人民政府</strong> 联合共建，
+            依托国家在德清打造地理信息全球创新高地优势，聚焦服务<strong>时空信息</strong>和<strong>低空经济</strong>两大国家战略新兴产业，
+            发挥时空信息与人工智能交叉学科优势，重点建设发展
+            <strong>时空信息与人工智能、空间智能系统与工程、时空智能与交叉应用</strong>等三大特色方向。
           </span>
         </el-col>
       </el-row>
-
     </el-main>
+
     <el-footer style="margin-top: 3%; background-color: #333333;">
       <div class="center" style="text-align: center; width: 100%; vertical-align: top">
+        <a href="https://beian.miit.gov.cn/#/Integrated/index"
+          style="color: rgb(240, 240, 240); text-decoration: none;">浙ICP备15038257号-3 </a>
+
         <svg t="1673338716645" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
           p-id="6821" width="20" height="20">
           <path
@@ -271,43 +357,30 @@ export default {
         navIndex = 5
       } else {
         for (let n = 0; n < offsetTopArr.length; n++) {
-          // 如果 scrollTop 大于等于第 n 个元素的 offsetTop 则说明 n-1 的内容已经完全不可见
-          // 那么此时导航索引就应该是 n 了
           if (scrollTop + 65 >= offsetTopArr[n]) {
             navIndex = n
           }
         }
       }
-      // 把下标赋值给 vue 的 data
       this.active = String(navIndex)
     },
     scrollTo(index) {
-      // 获取所有锚点元素
       const navContents = document.querySelectorAll('.el-divider')
-      // 所有锚点元素的 offsetTop
       const offsetTopArr = [0]
       navContents.forEach(item => {
         offsetTopArr.push(item.offsetTop)
       })
-      // 获取当前的 scrollTop
       var scrollTop = document.documentElement.scrollTop || document.body.scrollTop
-      // 获取目标位置的 offsetTop
       const targetOffsetTop = offsetTopArr[index] - 65
 
-      // 定义一次跳 STEP 个像素
       const STEP = 50
-      // 判断是往下滑还是往上滑
       if (scrollTop > targetOffsetTop) {
         smoothUp()
       } else {
         smoothDown()
       }
-      // 定义往下滑函数
       function smoothDown() {
-        // 如果当前 scrollTop 小于 targetOffsetTop 说明视口还没滑到指定位置
         if (scrollTop < targetOffsetTop) {
-          // 如果和目标相差距离大于等于 STEP 就跳 STEP
-          // 否则直接跳到目标点，目标是为了防止跳过了。
           if (targetOffsetTop - scrollTop >= STEP) {
             scrollTop += STEP
           } else {
@@ -318,7 +391,6 @@ export default {
           requestAnimationFrame(smoothDown)
         }
       }
-      // 定义往上滑函数
       function smoothUp() {
         if (scrollTop > targetOffsetTop) {
           if (scrollTop - targetOffsetTop >= STEP) {
@@ -335,18 +407,36 @@ export default {
     navigateToNewPage(newpage) {
       switch (newpage) {
         case 'kellect4apt': this.$router.push({ name: 'Kellect4APTDataset' }); break;
-        //case 'maliciousdataset': this.$router.push({ name: 'MaliciousDataset' }); break;
       }
     }
   }
 }
-
 </script>
 
-<style>
+<style scoped>
 body {
   padding: 0;
   margin: 0;
+}
+
+.justify {
+  font-size: 20px;
+  text-align: justify;
+  display: inline-block;
+  line-height: 2em;
+}
+
+strong {
+  color: #EB6A3F;
+  font-weight: bold;
+}
+
+.important {
+  color: #EB6A3F;
+  font-weight: bold;
+  background-color: #FFE5D8; 
+  padding: 2px 4px;
+  border-radius: 4px;
 }
 
 .el-menu .el-menu-item {
@@ -361,12 +451,6 @@ body {
 
 .el-menu .el-menu-item.is-active {
   background-color: #ffffff;
-}
-
-.justify {
-  font-size: 18px;
-  text-align: justify;
-  display: inline-block
 }
 
 .center svg,
@@ -392,9 +476,14 @@ body {
 .mycard {
   cursor: pointer;
 }
-
 .mycard:hover {
   transform: scale(1.05);
   transition: all 0.3s;
+}
+
+.bullet-list {
+  margin-left: 1.5em;
+  margin-bottom: 1em;
+  list-style-type: disc;
 }
 </style>
